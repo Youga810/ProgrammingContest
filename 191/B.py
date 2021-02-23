@@ -8,6 +8,6 @@ for i in A:
         B.append(i)
 for i in range(len(B)):
     if i == len(B)-1:
-        print(str(B[i])+" ")
+        print(str(B[i]), end="")
     else:
-        print(str(B[i]))
+        print(str(B[i])+" ", end="")
