@@ -5,7 +5,6 @@ def maximum(x):
         x /= 10
         lst.append(int(rest))
     lst.sort()
-    print(lst)
     maximum = 0
     for i in range(len(lst)):
         maximum += lst[i] * (10 ** i)
@@ -19,7 +18,6 @@ def minimum(x):
         x /= 10
         lst.append(int(rest))
     lst.sort(reverse=True)
-    print(lst)
     minimum = 0
     for i in range(len(lst)):
         minimum += lst[i] * (10 ** i)
