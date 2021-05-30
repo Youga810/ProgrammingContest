@@ -3,10 +3,13 @@ sn = input()
 sa = input()
 sb = input()
 tempsn = sn
+lena = len(sa)
+lenb = len(sb)
 
 for i in sa:
     if i in sn:
         index = sn.find(i)
-        sn = sn[index+1:]
+        if index + 1 < lena:
+            sn = sn[index+1:]
         print('index', index)
         print('sn', sn)
