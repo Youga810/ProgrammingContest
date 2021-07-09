@@ -1,15 +1,9 @@
-def palindrome(n):
-    for i in range(int(len(n) / 2)):
-        if n[i] != n[-1]:
-            return False
-    return True
-
-
 n = input()
-n_len = len(n)
-for i in range(0, 9):
-    flag = palindrome('0'*i + n)
-    if flag:
+flag = False
+for i in range(10):
+    s = '0' * i + n
+    if s == s[::-1]:
+        flag = True
         break
 if flag:
     print('Yes')
